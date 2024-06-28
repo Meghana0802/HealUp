@@ -1,0 +1,202 @@
+.journal-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    height: 100vh;
+    background: url('../auth/Background_image.jpg');
+    color: white;
+    flex-wrap: wrap; 
+}
+
+.journal-card,
+.calendar-card,
+.quote-card {
+    background-color: #080832;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.journal-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-card,
+.quote-card {
+    width: 100%;
+    margin-top: 20px; 
+}
+
+.journal-title {
+    border: none;
+    border-bottom: 2px solid #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.journal-title:focus {
+    outline: none;
+}
+
+.journal-content {
+    border: none;
+    flex: 1;
+    resize: none;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+.journal-content:focus {
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid white;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+.react-calendar {
+    width: 100%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080832;
+    color: white;
+}
+
+.react-calendar__tile {
+    max-height: 30px;
+}
+
+.quote-card {
+    height: auto;
+}
+
+.quote-card p {
+    margin: 0 0 10px;
+}
+
+.journal-card input,
+.journal-card textarea {
+    background-color: #080832;
+    color: #fff;
+}
+
+.journal-card button,
+.quote-card button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 0px 10px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.journal-card button:focus,
+.quote-card button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.journal-card button:hover,
+.quote-card button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.journal-card button:active,
+.quote-card button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+@media (max-width: 800px) {
+    .journal-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+    }
+
+    .journal-card,
+    .calendar-card,
+    .quote-card {
+        width: 100%;
+        margin: 20px 0; 
+    }
+
+    .calendar-card {
+        height: auto;
+    }
+
+    .quote-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 801px) {
+    .journal-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .journal-card {
+        width: 55%;
+        height: calc(100vh - 250px); 
+    }
+
+    .right-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+        height: calc(100vh - 200px); 
+    }
+
+    .calendar-card {
+        height: 60%;
+        margin-top: 50px;
+    }
+
+    .quote-card {
+        height: 30%;
+        margin-top: 20px;
+    }
+}

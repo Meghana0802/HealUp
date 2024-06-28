@@ -1,0 +1,65 @@
+body{
+    overflow-y: auto;
+}
+
+.resource-page {
+    background: url('../auth/Background_image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: #080832;
+    margin-bottom: 20px;
+}
+
+.resources-container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.resources-list {
+    max-height: 500px;
+    width: 500px;
+    border: 2px solid #080832;
+    background-color: #080832;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.resource-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1a1a72;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resource-button:hover {
+    background-color: #2c2c9e;
+}
+
+@media (max-width: 500px){
+    .resources-list{
+       width: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .resources-list{
+        width: 275px;
+    }
+    .resource-button{
+        padding: 7px;
+    }
+}

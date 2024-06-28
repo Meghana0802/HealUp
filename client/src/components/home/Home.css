@@ -1,0 +1,41 @@
+.home-page {
+    background: url('../auth/Background_image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p {
+    margin: 0 20px;
+}
+
+hr {
+    width: 100%;
+}
+
+.custom-card {
+    background-color: #080832;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 5px 50px;
+}
+
+.custom-card-body {
+    padding: 10px;
+}
+
+.outer-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.outer-list li {
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    text-align: center;
+}
